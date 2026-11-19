@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d0b">
+  <title>FF AIM LOCK | Training Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">✦</span><span>FF<span class="green">/</span>TOOLS</span></div>
+      <div class="status"><i></i> SYSTEM ONLINE</div>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">TRAINING INTERFACE <span>•</span> VERSION 1.0</p>
+      <h1> AIM <span>LOCK</span></h1>
+      <p class="subtitle">BODY &amp; HEAD CONTROL SIMULATOR</p>
+      <div class="hero-line"><span></span><b>SIMULATION MODE</b><span></span></div>
+    </section>
+
+    <section class="mode-grid" aria-label="Mode simulasi">
+      <article class="mode-card" id="headCard">
+        <div class="card-top"><span class="mode-icon">⌖</span><span class="mode-tag">MODE 01</span></div>
+        <h2>HEAD <em>FOCUS</em></h2>
+        <p>Simulasi fokus bidikan ke area kepala.</p>
+        <div class="card-bottom">
+          <span class="state" id="headState">OFFLINE</span>
+          <button class="toggle" id="headToggle" type="button" aria-pressed="false" aria-label="Aktifkan Head Focus"><span></span></button>
+        </div>
+      </article>
+      <article class="mode-card" id="bodyCard">
+        <div class="card-top"><span class="mode-icon">◎</span><span class="mode-tag">MODE 02</span></div>
+        <h2>BODY <em>FOCUS</em></h2>
+        <p>Simulasi fokus bidikan ke area badan.</p>
+        <div class="card-bottom">
+          <span class="state" id="bodyState">OFFLINE</span>
+          <button class="toggle" id="bodyToggle" type="button" aria-pressed="false" aria-label="Aktifkan Body Focus"><span></span></button>
+        </div>
+      </article>
+    </section>
+
+    <section class="console panel">
+      <div class="section-heading"><div><p class="eyebrow">LIVE CONSOLE</p><h2>CONTROL CENTER</h2></div><span class="live-dot">● LIVE</span></div>
+      <div class="console-screen" aria-live="polite">
+        <div class="console-row"><span>HEAD_FOCUS</span><b id="headLog" class="off">DISABLED</b></div>
+        <div class="console-row"><span>BODY_FOCUS</span><b id="bodyLog" class="off">DISABLED</b></div>
+        <div class="console-row"><span>ENGINE</span><b class="on">SIMULATOR READY</b></div>
+        <p class="console-message" id="consoleMessage">> Menunggu pilihan mode...</p>
+      </div>
+      <button class="reset-btn" id="resetButton" type="button">↻ RESET ALL MODES</button>
+    </section>
+
+    <section class="notice">
+      <span class="notice-icon">!</span>
+      <p><strong>Info:</strong> Ini adalah panel simulasi mandiri untuk tampilan dan latihan interaksi. Tombol tidak mengubah Free Fire, tidak mengunci target, dan tidak memasang cheat ke game.</p>
+    </section>
+    <footer>FF/TOOLS <span>—</span> MADE FOR PRACTICE <span class="footer-version">BUILD 001</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
